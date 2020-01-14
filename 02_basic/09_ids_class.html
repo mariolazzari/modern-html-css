@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Div, span, id and class</title>
-  <style>
-    .card {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Div, span, id and class</title>
+    <style>
+      .card {
         border: 1px solid #ccc;
         background: #f4f4f4;
         padding: 20px;
         margin-bottom: 10px;
       }
 
-    .enhance {
-      color: yellow;
-      background-color:black;
-    }
-  </style>
-</head>
-<body>
- 
-</body>
+      .enhance {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-nav">
+      <h1>My website</h1>
+      <p>a site about me</p>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quia soluta
+        dignissimos fugiat. Minus dolore perspiciatis optio quam! Ratione
+        numquam itaque cum sit doloremque, facere velit obcaecati, veritatis
+        recusandae ipsum voluptatibus?
+        <span class="enhance"> Voluptate architecto maiores vero</span>
+        at accusantium eligendi error nostrum numquam quasi ut sapiente
+        repudiandae ad, soluta consequuntur labore quia alias sed delectus quo.
+        Possimus nesciunt necessitatibus quo, id fugiat fugit omnis, asperiores
+        recusandae cupiditate debitis laudantium ab minima iure blanditiis atque
+        facilis magni voluptates dolor veritatis earum! Consequatur distinctio
+        cum suscipit inventore animi odio perferendis fugiat, dolore alias iusto
+        nisi, sequi voluptas illo a non totam repellat qui. Eveniet!
+      </p>
+    </div>
+
+    <div id="contacts" class="card">
+      <h3>Contacys</h3>
+      <ul>
+        <li>addrell</li>
+        <li>phone</li>
+        <li>email</li>
+      </ul>
+    </div>
+
+    <div id="footer">
+      <p>Copyright&copy; 2020</p>
+    </div>
+  </body>
 </html>

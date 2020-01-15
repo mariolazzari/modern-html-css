@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Selectors</title>
-  <style>
-    
-  </style>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors</title>
+    <style>
+      /* element selector */
+      body {
+        background-color: darkslategrey;
+      }
+
+      .primary-heading {
+        color: blue;
+      }
+
+      /* id selector */
+      #welcome {
+        background-color: lightgray;
+      }
+
+      /* multiple selector */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      /* nested selector*/
+      #welcome p {
+        font-size: 20px;
+      }
+
+      #about {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa
+        reprehenderit molestias possimus consectetur cumque, amet ipsam nostrum
+        vel iure.
+      </p>
+    </div>
+
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rem, sed
+        repellat odit molestias ducimus delectus pariatur sint sit consequuntur?
+      </p>
+    </div>
+  </body>
 </html>

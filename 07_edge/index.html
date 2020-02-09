@@ -132,8 +132,65 @@
     </section>
 
     <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact us</h2>
+        <p>Please use form below to contact us</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter name..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">eMail</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter email..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter phone..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter message..."
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-dark" />
+        </form>
+      </div>
+
       <div class="map"></div>
-      <div class="form"></div>
     </section>
+
+    <script src="js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4sd8zg0L_XQIO0w2FJQjzWq0rjRHUA8Y&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container ">
+        <p>Copyright $copy; 2020</p>
+      </div>
+    </footer>
   </body>
 </html>
